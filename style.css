@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+html,body,
+section,div,p,
+dl,dt,dd,
+form,input,label {
+    box-sizing: border-box;
+    padding: 0;
+    border: none;
+    margin: 0;
+    color: #333333;
+    font-size: 12px;
+    font-family: sans-serif;
+    cursor: default;
+}
+
+#contents {
+    width: 300px;
+    height: 270px;
+    background-image: url(img/icon_512.png);
+}
+
+#contents_inner {
+    width: 250px;
+    margin: 10px auto;
+}
+
+section {
+    margin: 5px 0px;
+}
+
+#input {
+    width: 110px;
+    cursor: text;
+}
+
+#input::placeholder {
+    color: #bebebe;
+}
+
+#conf p {
+    display: inline-block;
+    width: 200px;
+}
+
+.toggle_btn {
+    appearance: none;
+    -webkit-appearance: none;
+    display: inline-block;
+    width: 25px;
+    height: 9px;
+    border: 0px solid rgba(0,0,0,0.0);
+    border-radius: 50px;
+    background-color: #dddddd;
+    transition: background-color .4s ease;
+    cursor: pointer;
+}
+
+.toggle_btn:checked {
+    background-color: #bbbbbb;
+}
+
+.toggle_btn + label {
+    position: relative;
+    display: inline-block;
+    top: 3px;
+    left: -30px;
+    width: 15px;
+    height: 15px;
+    border: 0px solid rgba(0,0,0,0.0);
+    border-radius: 50%;
+    background-color: #eeeeee;
+    box-shadow: 0 0 4px rgba(0,0,0,0.4);
+    transition: left .4s ease, background-color .4s ease;
+    cursor: pointer;
+}
+
+.toggle_btn:checked + label {
+    position: relative;
+    display: inline-block;
+    top: 3px;
+    left: -20px;
+    width: 15px;
+    height: 15px;
+    border: 0px solid rgba(0,0,0,0.0);
+    border-radius: 50%;
+    background-color: #faff00;
+    box-shadow: 0 0 4px rgba(0,0,0,0.4);
+}
+
+.toggle_btn:focus {
+    outline: none;
+}
+
+#line {
+    margin-bottom: 2px;
+}
+
+#osakana {
+    margin-top: 3px;
+}
+
+dl {
+    margin-left: 32px;
+}
+
+dt,dd {
+    display: inline-block;
+}
+
+dt {
+    width: 10px;
+}
+
+#name {
+    text-align: right;
+    margin-right: 5px;
+    margin-top: 5px;
+}

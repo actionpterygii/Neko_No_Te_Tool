@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Neko_No_Te_Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="contents">
+        <div id="contents_inner">
+            <section id="textbox">
+                <form id="form" action="">
+                    <input id="input" type="text" value="" placeholder="例：180401a">
+                </form>
+            </section>
+            <section id="conf">
+                <form id="conf_open">
+                    <p>ページを開く</p>
+                    <input type="checkbox" id="open_btn" class="toggle_btn">
+                    <label for="open_btn"></label>
+                </form>
+                <form id="conf_copy">
+                    <p>制作物データへのパスをコピーする</p>
+                    <input type="checkbox" id="copy_btn" class="toggle_btn">
+                    <label for="copy_btn"></label>
+                </form>
+            </section>
+            <section id="desc">
+                <p id="line">---------------------------------------------</p>
+                <p id="desc_txt">
+                    "yymmdd"の後おさかな情報を入力し、<br>
+                    Enterで実行します。おさかな情報1個で<br>
+                    SP、2個でPC、なければmainのSPを開きます。<br>
+                    (半角or全角対応,トグルボタン状態保存可)
+                </p>
+                <div id="osakana">
+                    <dl>
+                        <dt>a</dt>
+                        <dd>：AJI</dd>
+                    </dl>
+                    <dl>
+                        <dt>s</dt>
+                        <dd>：SABA</dd>
+                    </dl>
+                    <dl>
+                        <dt>k</dt>
+                        <dd>：KATSUO</dd>
+                    </dl>
+                    <dl>
+                        <dt>m</dt>
+                        <dd>：MAGURO</dd>
+                    </dl>
+                </div>
+                <p id="name">Neko_No_Te_Tool</p>
+            </section>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
